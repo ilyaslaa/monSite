@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>monSite</title>
+  <style>
+  *
+  {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+  }
+        
+  body
+  {
+    margin: 0px;
+    background: linear-gradient(90deg, #f5f5f5, #f5f5f5,#e1e1e1);
+  }
+        
+  #i
+  {
+    width: 100%;
+    height: 500px;
+    background: url(images/Taroudant_maroc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 10px gray;
+    animation: 0.5s ease-out 0s 1 backgroundslid;
+  }
+        
+  #imgLogo
+  {
+    position: relative;
+    top:-44px;
+    margin-left: 10px;
+  }
+        
+  nav
+  {
+    font-size: 14px;
+    background: linear-gradient(90deg, rgba(85, 85, 85, 0.8),rgba(0, 0, 0, 0.6));
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 30px;
+    box-shadow: 0px 0px 30px black;
+    transition: 1.5s;
+  }
+        
+  ul
+  {
+    position: relative;
+    top: 5px;
+  }
+        
+  li
+  {
+    display: inline;
+    list-style-type: none;
+  }
+        
+  .elementMenu
+  {
+    text-decoration: none;
+    color: white;
+    border-bottom: 0px solid transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-shadow: 1px 1px 1px gray;
+  }
+        
+  .elementMenu:hover
+  {
+    border-color: tomato;
+    transition: 0.5s;
+    border-bottom-width: 5px;
+    color: tomato;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 5px;
+  }
+        
+  #txtTitreAcceuil
+  {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top:200px;
+    width: 100%;
+    text-align: center;
+    font-size: 72px;
+    color: white;
+    text-shadow: 0px 0px 7px black;
+    animation: 1.5s ease-out 0s 1 slidebot;
+  }
+        
+  #st
+  {
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top:280px;;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 7px gray;
+    animation: 2.5s ease-out 0s 1 fondu;
+    font-size: 22px;
+  }
+        
+  @keyframes slidebot {
+    0% {
+      transform: translateY(-25%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+        
+  @keyframes backgroundslid {
+    0% {
+      transform: translateY(-2%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+        
+  @keyframes backgroundfondu {
+    0% {
+      transform: translateY(-2%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+        
+  @keyframes slidetop {
+    0% {
+      transform: translateY(25%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+        
+  @keyframes fondu {
+    0% {
+      color: transparent;
+    }
+    100% {
+      color: white;
+    }
+  }
+        
+  .button
+  {
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px gray;
+    background: linear-gradient(90deg,rgb(153, 48, 29), #ce4e38);
+    color: white;
+    margin-top: 20px;
+    animation: 1.5s ease-out 0s 1 slidetop;
+  }
+        
+  button a
+  {
+    color: white;
+    text-decoration: none;
+  }
+
+  .button:hover
+  {
+    box-shadow: 0px 0px 25px orangered;
+    transition: 1s;
+  }
+        
+  .contenu
+  {
+    display: flex;
+    justify-content: center;
+  }
+        
+  @media (max-width: 1000px)
+  {
+    #txtTitreAcceuil
+    {
+      top:100px;
+      transition: 0.25s;
+    }
+  }
+        
+  @media (max-width: 600px)
+  {
+    #txtTitreAcceuil
+    {
+      top:150px;
+      font-size: 50px;
+      transition: 0.25s;
+    }
+  }
+</style>
+</head>
+<body>
+    <header>
+        <div id="i" />
+        <nav></nav>
+        <img id="imgLogo" src="images/logo.png" alt="logo" height="40" style="margin-left: 48%;">
+    </header>
+    <div id="txtTitreAcceuil">
+        Lieux naturels du Maroc
+    </div>
+    <div id="st">
+      UNE DIVERSITÉ DE PAYSAGE À DÉCOUVRIR!
+    </div>
+    <div class="contenu">
+        <button class="button"><a href="gallery.html">En savoir plus</a></button>
+    </div>
+</body>
+</html>

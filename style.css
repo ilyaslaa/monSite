@@ -1,0 +1,274 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+header
+{
+    height: 50px;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+body
+{
+    margin: 0px;
+    background-image: url(images/175.jpg);
+    background-size: cover;
+}
+
+#i
+{
+    width: 100%;
+    height: 50px;
+    background: url(images/Taroudant_maroc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 10px gray;
+    animation: 0.5s ease-out 0s 1 backgroundslid;
+    background-position: center;
+}
+
+@keyframes backgroundslid {
+    0% {
+      transform: translateY(-2%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+
+#imgLogo
+{
+    position: relative;
+    top:-44px;
+    margin-left: 10px;
+}
+
+nav
+{
+    font-size: 14px;
+    background: linear-gradient(90deg, rgba(85, 85, 85, 0.8),rgba(0, 0, 0, 0.6));
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 30px;
+    box-shadow: 0px 0px 30px black;
+    transition: 1.5s;
+}
+
+nav ul
+{
+    position: relative;
+    top: 5px;
+    margin-bottom: 15px;
+}
+
+nav li
+{
+    display: inline;
+    list-style-type: none;
+}
+
+.elementMenu
+{
+    text-decoration: none;
+    color: white;
+    border-bottom: 0px solid transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-shadow: 1px 1px 1px gray;
+}
+
+.elementMenu:hover
+{
+    border-color: tomato;
+    transition: 0.5s;
+    border-bottom-width: 5px;
+    color: tomato;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+
+#contenu
+{
+    margin: 0px;
+    margin-top: 100px;
+    padding: 0px;
+    display: flex;
+    margin-left: 1vw;    
+    position: absolute;
+    margin-bottom: 150px;
+}
+
+#contenu aside
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.4);
+    height: 80vh;
+    width: 15vw;
+    margin-right: 1vw;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: fixed;
+    animation: slidetop 1s;
+}
+
+#contenu aside ul
+{
+    margin-top: 50px;
+}
+
+#contenu aside ul li
+{
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+#contenu aside ul li a
+{
+    color: rgb(224, 67, 10);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 3px;
+}
+
+#contenu aside ul li a:hover
+{
+    color: white;
+    padding: 7px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#contenu aside ul li:hover
+{
+    padding: 7px;
+    border-radius: 10px;
+    background-color: brown;
+    transition: 1s;
+}
+
+#contenu section
+{
+    width: 75vw;
+    margin-right: 1vw;
+    background-color: rgb(255, 245, 225);
+    box-shadow: 3px 3px 25px rgba(0, 0, 0, 0.699);
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    animation: slidebot 1s;
+}
+
+.imgP
+{
+    width: 100%;
+    height: 350px;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 32px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 75px;
+}
+
+p
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+#sect
+{
+    display: flexbox;
+    margin-left: 20vw;
+}
+
+@keyframes slidebot {
+    0% {
+      transform: translateY(-25%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes slidetop {
+    0% {
+      transform: translateY(+25%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+footer
+{
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    top: 50%;
+}
+
+textarea {
+    resize: none;
+ }
+ 
+@media (min-width: 600px)
+{
+    table
+    {
+        margin-left: 10vw;
+    }
+}
+
+#imagesGal
+{
+    display: flexbox;
+}
+
+.imgGal
+{
+    display: inline;
+    width: 30vw;
+    transition: 1s;
+    animation: slidetop 2s;
+}
+
+.imgGal:hover
+{
+    opacity: 0.5;
+}
+
+@media (max-width: 900px)
+{
+    .imgGal{
+    display: block;
+    width: 90vw;}
+}
