@@ -257,6 +257,7 @@ textarea {
 {
     display: inline;
     width: 30vw;
+    height: 300px;
     transition: 1s;
     animation: slidetop 2s;
     border-radius: 150px;
