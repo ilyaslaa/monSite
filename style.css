@@ -259,6 +259,8 @@ textarea {
     width: 30vw;
     transition: 1s;
     animation: slidetop 2s;
+    border-radius: 150px;
+    box-shadow: 0px 0px 100px black;
 }
 
 .imgGal:hover
